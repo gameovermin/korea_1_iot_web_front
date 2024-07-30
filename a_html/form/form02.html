@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form02.html</title>
+</head>
+<body>
+  <!-- 1. textarea -->
+  textarea <textarea rows="5" cols="10" placeholder="후기를 작성해 주세요"></textarea>
+
+  <br />
+
+  <!-- 2. select option -->
+  select 
+  <select size="1" multiple>
+    <option value="kr" >한국어</option>
+    <option value="en">영어</option>
+    <option value="jp"selected>일본어</option>
+    <option value="fr">불어</option>
+  </select>
+
+  <br />
+
+  <!-- 3. datalist, option -->
+  datalist 
+  <input type="text" list="frult" />
+  <datalist id="frult">
+    <option value="apple">선택옵션 1</option>
+    <option value="banana">선택옵션 2</option>
+    <option value="orenge">선택옵션 3</option>
+  </datalist>
+
+  <br />
+
+  <!-- 4. button 태그 ( input 태그의 각 속성값과 매칭) -->
+  <button type="submit" >제출</button>
+  <button type="reset" >초기화</button>
+  <!-- <button type="button" >버튼</button> -->
+  <button>버튼</button>
+</body>
+</html>

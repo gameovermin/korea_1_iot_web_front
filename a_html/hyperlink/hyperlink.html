@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hyperlink.html</title>
+</head>
+<body>
+  <h1 id="hyperlink">하이퍼 링크</h1>
+  <!-- 1.텍스트 링크 -->
+  <!-- 새로고침 기능 -->
+  <a href="#">텍스트 링크</a>
+  <a href="https://www.google.com">구글 바로가기</a>
+  <a href="https://www.naver.com">네이버 바로가기</a>
+  <a href="https://www.daum.net">다음 바로가기</a>
+
+  <!-- 2.이미지 링크 -->
+  <a href="https://www.naver.com">
+    <img src="https://cdn.pixabay.com/photo/2017/07/31/17/12/water-2559064_1280.jpg" alt="">
+  </a>
+
+  <!-- a태그 target 속성 -->
+  <hr />
+  <a href="https://www.naver.com" target="_blank">_blank 속성값 사용</a>
+
+  <!-- 절대 경로 & 상대 경로 -->
+
+  <!-- 1. 절대 경로 -->
+  <h2 id="absolute">절대 경로</h2>
+  <p>
+    <a href="https://www.w3.org">w3c</a>
+    <a href="https://www.google.com">google</a>
+  </p>
+  
+  <!-- 2.상대경로
+      디렉토리(폴더)
+      - 같은 디렉토리 내에 있는 경우
+        ./
+      - 상위 디렉토리에 있는 경우
+        ../
+      - 하위 디렉토리에 있는 경우
+        ./하위 디렉토리명/
+  -->
+  <h2 id="relative">상대 경로</h2>
+  <p>
+    <!-- <a href="./현재.jpg">현재 폴더 이미지</a> -->
+    <!-- 현재 경로에서는 ./ 를 생략 가능 -->
+    <a href="현재.jpg">현재 폴더 이미지</a>
+    <br>
+    <a href="../상위.jpg">상위 폴더 이미지</a>
+    <br>
+    <a href="./inner/하위.jpg">하위 폴더 이미지</a>
+
+  </p>
+
+  <hr>
+  <!-- 현재 문서 내에서의 위치 이동 링크 -->
+  <a href="#hyperlink">h1태그로 이동(문서의 맨 위)</a>
+
+  <span> | </span>
+
+  <a href="#absolute">절대 경로로 이동</a>
+  
+  <span> | </span>
+
+  <a href="#relative">상대 경로로 이동</a>
+
+
+</body>
+</html>
