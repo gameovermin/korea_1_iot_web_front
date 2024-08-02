@@ -1,0 +1,443 @@
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.container {
+    width: 100%;
+}
+.header {
+    width: 100%;
+    height: 38px;
+    background-color: #444;
+    display: flex;
+}
+.header-menu {
+    display: flex;
+    justify-content: right;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    height: 38px;
+    /* position: relative; */
+}
+.header-menu > ul {
+    margin: 0;
+    display: flex;
+    /* justify-content: right; */
+    list-style-type: none;
+    text-decoration: none;
+}
+.header-menu > ul > li {
+    margin: 0px 10px;
+
+}
+.header-menu > ul > li > a {
+    margin-top: 10px;
+    display: inline-block;
+    color: #ddd;
+    font-size: 11px;
+    font-weight: 400;
+    position: relative;
+    height: 38px;
+    text-decoration: none;
+}
+
+.header-menu > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.header-menu > ul > li > select {
+    margin-top: 10px;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    font-size: 0px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav img {
+    width: 100%;
+    /* align-items: center; */
+    margin-top: 25px;
+}
+
+.nav-info {
+    display: flex;
+    width: 990px;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-info > li {
+    flex-direction: column;
+}
+.nav-info > li > a {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Noto Sans KR';
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+}
+.nav-info > li > a:hover {
+    text-decoration: underline;
+}
+.content {
+    /* display: inline; */
+    margin: 0;
+    padding: 0;
+}
+
+.content-img {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.search-area {
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background-color: #009999;
+    text-align: center;
+}
+
+.search-area .search-input {
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 95px;
+}
+
+.search-area .search-input label {
+    display: inline-block;
+	text-align: center;
+	font-weight:bold;
+    color: #fff;
+    width: 95px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+.search-area .search-input input {
+    height: 50px;
+    line-height: 50px;
+    width: 570px;
+    border-radius: 25px;
+    color: #111;
+    border: none;
+    padding-left: 30px;
+}
+
+.search-area .search-input input a {
+    position: absolute;
+    top: 24px;
+    right: 290px;
+    width: 31px;
+    height: 31px;
+    background: url(./ico_search.png) no-repeat;
+}
+
+.main-service {
+    margin: 0;
+    padding: 0;
+    /* padding: 80px 0; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 581px;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-service .main-title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.main-service .service01 {
+    margin: 0 auto;
+    width: 1198px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.main-service .service01 > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.main-service .service01 > ul > li {
+    list-style: none;
+}
+
+.main-service .service01 > ul > li > a {
+    text-decoration: none;
+    color: #444;
+}
+
+.main-service .service01 > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+
+.serv01 {
+    background: url(./ico_serv_doc.png);
+    width: 240px;
+    height: 68px;
+    float: left;
+    text-align: center;
+    padding-top: 130px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.serv02 {
+    background: url(./ico_serv_dept.png);
+    width: 240px;
+    height: 68px;
+    float: left;
+    text-align: center;
+    padding-top: 130px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.serv03 {
+    background: url(./ico_serv_chart.png);
+    width: 240px;
+    height: 68px;
+    float: left;
+    text-align: center;
+    padding-top: 130px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.serv04 {
+    background: url(./ico_serv_first.png);
+    width: 240px;
+    height: 68px;
+    float: left;
+    text-align: center;
+    padding-top: 130px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.serv05 {
+    background: url(./ico_serv_resv.png);
+    width: 240px;
+    height: 68px;
+    float: left;
+    text-align: center;
+    padding-top: 130px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.main-service .service02 {
+    margin: 0 auto;
+    width: 1200px;
+    margin-top: 40px;
+}
+
+.main-service .service02 > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.main-service .service02 > ul > li {
+    list-style: none;
+}
+
+.main-service .service02 > ul > li > a {
+    text-decoration: none;
+
+}
+
+.main-service .service02 > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.serv06 {
+    background: #009999 url(./ico_serv_certi.png) 100% 0 no-repeat;
+    width: 350px;
+    height: 90px;
+    line-height: 90px;
+    float: left;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.serv07 {
+    margin-left: 30px;
+    background: #009999 url(./ico_serv_downi.png) 100% 0 no-repeat;
+    width: 350px;
+    height: 90px;
+    line-height: 90px;
+    float: left;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.serv08 {
+    margin-left: 30px;
+    background: #009999 url(./ico_serv_duty.png) 100% 0 no-repeat;
+    width: 350px;
+    height: 90px;
+    line-height: 90px;
+    float: left;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.info-area {
+    margin: 80px auto;
+    padding: 0;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.info-area .left-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-area .tel-box {
+    width: 580px;
+    float: left;
+}
+
+.info-area .left-box .tel-box {
+    width: 548px;
+    height: 133px;
+    border: 1px solid #ddd;
+    background: #f9f9f9 url(./ico_tel.png) 100% 0 no-repeat;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 35px 0 0 30px;
+
+}
+
+.tel-box span {
+    color: #009999;
+    font-size: 50px;
+    font-weight: 600;
+    display: block;
+    line-height: 1em;
+    margin-top: 10px;
+}
+
+.info-area .left-box > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.info-area .left-box > ul > li {
+    float: left;
+    width: 238px;
+    height: 93px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 25px 0 0 30px;
+}
+
+.info-area .left-box > ul > li a {
+    text-decoration: none;
+    color: #444;
+}
+
+.info-area .left-box > ul > li a:hover {
+    text-decoration: underline;
+}
+
+.info-area .left-box > ul > li span {
+    color: #009999;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    line-height: 1em;
+    margin-top: 10px;
+}
+
+.info-area .right-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.hpc-box {
+    width: 548px;
+    height: 133px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 35px 0 0 30px;
+}
+
+.hpc-box .hpc-center {
+    text-decoration: none;
+    color: #444;
+}
+
+.hpc-tel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hpc-box .hpc-tel > span {
+    margin-right: 20px;
+    top: 2px;
+    color: #009999;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hpc-box > ul {
+    
+
+}
