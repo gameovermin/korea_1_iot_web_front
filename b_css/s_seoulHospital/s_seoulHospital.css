@@ -502,10 +502,11 @@ body {
 
 .health-area {
     margin: 0;
-    padding: 0;
+    padding: 80px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: #f9f9f9;
 }
 
 .health-area .health-story {
@@ -525,7 +526,6 @@ body {
 }
 
 .health-area .left-box {
-    /* display: inline-block; */
     width: 580px;
     display: flex;
     flex-direction: column;
@@ -541,6 +541,34 @@ body {
     text-align: center;
     
 }
+
+.health-area .left-box .health-wrap .vod-box .box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 30px auto 0;
+    width: 420px;
+    height: 180px;
+    padding: 0 50px;
+    z-index: 999;
+}
+
+.health-area .left-box .health-wrap .vod-box .box > a { 
+    list-style-type: none;
+    text-decoration: none;
+    color: #444;
+}
+
+.health-area .left-box .health-wrap .vod-box .box > a:hover {
+    text-decoration: underline;
+}
+
+.health-area .left-box .health-wrap .vod-box .box > a > span { 
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .health-area .right-box {
     margin-left: 40px;
@@ -558,6 +586,34 @@ body {
     padding-top: 35px;
     text-align: center;
 }
+
+.health-area .right-box .health-wrap .health-box .box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 30px auto 0;
+    width: 420px;
+    height: 180px;
+    padding: 0 50px;
+    z-index: 999;
+}
+
+.health-area .right-box .health-wrap .health-box .box > a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #444;
+}
+
+.health-area .right-box .health-wrap .health-box .box > a:hover {
+    text-decoration: underline;
+}
+
+.health-area .right-box .health-wrap .health-box .box > a > span {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .box > .left-box > ul {
     margin: 25px 0;
