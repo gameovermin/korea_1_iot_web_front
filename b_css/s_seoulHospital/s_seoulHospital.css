@@ -330,7 +330,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-
 }
 
 .info-area .left-box {
@@ -517,12 +516,262 @@ body {
     color: #444;
 }
 
+
+.health-area .box {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .health-area .left-box {
     /* display: inline-block; */
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+}
 
-
+.health-area .left-box .health-wrap { 
+    width: 578px;
+    height: 288px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    padding-top: 35px;
+    text-align: center;
+    
 }
 
 .health-area .right-box {
+    margin-left: 40px;
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+}
+
+.health-area .right-box .health-wrap { 
+    width: 578px;
+    height: 288px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.box > .left-box > ul {
+    margin: 25px 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.box > .right-box > ul {
+    margin: 25px 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.box > .right-box > ul > li {
+    list-style: none;
+
+}
+.box > .right-box > ul > li > a {
+    text-decoration: none;
+    float: left;
+    width: 240px;
+    height: 80px;
+    line-height: 80px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    padding-left: 30px;
+    text-align: left;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.box > .right-box > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.box > .left-box > ul > li { 
+    list-style: none;
+}
+
+.box > .left-box > ul > li > a { 
+    text-decoration: none;
+    float: left;
+    width: 240px;
+    height: 80px;
+    line-height: 80px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    padding-left: 30px;
+    text-align: left;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.box > .left-box > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.dise {
+    background: #ff9c1d url(./ico_health_dise.png) 100% 0 no-repeat;
+}
+
+.symp {
+    background: #ff9c1d url(./ico_health_symp.png) 100% 0 no-repeat;
+}
+
+.check {
+    background: #009999 url(./ico_health_check.png) 100% 0 no-repeat;
+}
+
+.drug {
+    background: #009999 url(./ico_health_drug.png) 100% 0 no-repeat;
+}
+
+.news-area {
+    margin: 80px auto;
+    padding: 0;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.news-area .left-box .notice-box .list {
+    list-style: none;
+    width: 518px;
+    height: 118px;
+    padding: 25px 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.news-area .left-box .notice-box .list > li {
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-area .left-box .notice-box .list > li > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #444;
+    font-weight: 500;
+}
+
+.news-area .left-box .notice-box .list > li > a:hover {
+    text-decoration: underline;
+}
+
+.news-area .left-box .notice-box .list > li > span {
+    font-weight: 400;
+    color: #999;
+    font-size: 15px;
+    right: 30px;
+}
+
+
+.news-area .left-box .notice-box .h2-title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.news-area .left-box .bnr {
+    margin-top: 40px;
+    
+}
+
+.news-area .left-box .bnr > a {
+    color: #444;
+    text-decoration: none;
+}
+
+.news-area .right-box .news-box .list {
+    list-style: none;
+    width: 518px;
+    height: 118px;
+    padding: 25px 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.news-area .right-box .news-box .list > li {
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-area .right-box .news-box .list > li > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #444;
+    font-weight: 500;
+}
+
+.news-area .right-box .news-box .list > li > a:hover { 
+    text-decoration: underline;
+
+}
+
+.news-area .right-box .news-box .list > li > span {
+    font-weight: 400;
+    color: #999;
+    font-size: 15px;
+    right: 30px;
+}
+.news-area .right-box .news-box .h2-title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.news-area .right-box .bnr {
+    margin-top: 40px;
+}
+
+.news-area .right-box .bnr > a {
+    color: #444;
+    text-decoration: none;
+}
+
+.sns-area {
+    padding: 80px 0;
+    width: 100%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.sns-area .h1-title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.sns-icon {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sns-icon > li {
+    padding: 0 15px;
 
 }
