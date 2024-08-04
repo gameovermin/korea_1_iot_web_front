@@ -409,6 +409,7 @@ body {
 }
 
 .hpc-box {
+    margin-left: 40px;
     width: 548px;
     height: 133px;
     border: 1px solid #ddd;
@@ -438,6 +439,90 @@ body {
 }
 
 .hpc-box > ul {
-    
+    margin: 25px 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.hpc-box > ul > li {
+
+}
+
+.hpc-box > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 350;
+    float: left;
+    background: #ff9c1d;
+    border-radius: 5px;
+    border: none;
+    padding: 0 30px;
+    line-height: 35px;
+    height: 35px;
+}
+
+.hpc-box > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.go-site {
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.go-site > li {
+    flex-direction: column;
+}
+.go-site > li > a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    float: left;
+    width: 270px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.recruit {
+    background: url(./bg_recruit.png) 0 0 no-repeat;
+}
+
+.funeral {
+    margin-left: 40px;
+    background: url(./bg_funeral.png) 0 0 no-repeat;
+}
+
+.health-area {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.health-area .health-story {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.health-area .left-box {
+    /* display: inline-block; */
+
+
+}
+
+.health-area .right-box {
 
 }
