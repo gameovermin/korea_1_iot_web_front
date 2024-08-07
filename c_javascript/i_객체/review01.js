@@ -29,24 +29,74 @@ let todo = {
 
 // # 프로젝트 구현
 
-let todos = [];
+let todos = []; // 할 일 목록을 저장할 배열 초기화
 
-function addTodo() {
+// ? 1. 할 일을 추가하는 함수
+// : 고유 ID, 내용, 완료 상태를 가지는 객체를 생성
+// >> 배열에 추가
 
+function addTodo(content) {
+  // 새로운 할일의 생성
+  const newTodo = {
+    id : todos.length + 1,
+    content : content,
+    completed : false
+  }
+
+  todos.push(newTodo);
+  displayTodos();
 
 }
 // 할 일을 완료상태를 변경하는 함수
-function toggleTodo() {
+// : 주어진 id를 가진 할 일의 완료 상태를 전환(토글)
+function toggleTodo(id) {
+  todos = todos.map((todo) => {
+    // 순회되는 (todo) 할 일의 id와 매개변수로 전달받은 id가 일치한다면
+    if(todo.id === id) {
+      // 해당 할 일의 완료상태를 토글시키고 새로운 객체로 반환
+      // >> t스프레드 연산자(...)
 
+      // let arr1 = [1, 2, 3];
+      // let arr2 = [...arr1];  => arr1의 요소만 가져와서 새로운 배열을 생성 (메모리 주소가 다름)
 
+      // completed : false
+      // 객체명.속성키 = 속성값;  => 객체 속성값 재할당
+      // 속성키 : 속성값;
+      return {...todo, completed: !todo.completed}; // todo는 현재 순회되는 객체(할 일) 값
+    }
+    return todo;  // id가 일치하지 않는 데이터는 기존 객체를 그대로 반환
+  });
+  displayTodos();
 }
 
-function deleteTodo() {
-
-
+// 할 일을 삭제하는 함수
+// :  주어진 id를 가진 할 일을 todos에
+function deleteTodo(id) {
+  todos = todos.filter(((todo) => {
+    return todo.id !== id;
+  }))
+  displayTodos();
 }
 
 function displayTodos() {
+  console.log('현재의 할 일 목록');
+  todos.forEach(todo => {
+    // todo.completed는 boolean 값
+    // >> 조건식 중에 연산자를 활용하는 '삼항 연산자'  (조건식 ? 참 : 거짓)
+    console.log(`${todo.id} : ${todo.content} - ${todo.completed ? '완료됨' : '완료되지않음'}`);
 
-
+  });
 }
+
+addTodo('sqld 공부하기!');
+addTodo('기술블로그 작성하기');
+addTodo('자기소개서 작성하기');
+
+toggleTodo(1);
+toggleTodo(2);
+
+deleteTodo(2);
+
+addTodo('자바스크립트 복습하기');
+
+toggleTodo(2);

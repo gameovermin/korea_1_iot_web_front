@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 핸들러</title>
+  <style>
+    div {width: 50px; height: 50px; border: 1px solid #ccc; margin: 10px; display: inline-block;}
+  </style>
+</head>
+<body>
+  <!-- ! JS 이벤트 -->
+  <button id="btn1">버튼</button>
+  <span id="keyDown"></span>
+  <input type="text" id="txt1" />
+  <hr />
+
+  <!-- 2) 인라인 이벤트 핸들러 -->
+  
+  <!-- 
+    on키워드를 사용한 이벤트 속성을 태그에 지정
+    : 연결할 함수는 JS 파일에서 작성
+    >> on이벤트="js에서 정의된 함수"
+  -->
+  <button id="textChange" style="font-size:20px" onclick="textChangeFunc();">change Text Color</button>
+
+  <p>1. querySelector</p>
+  <button class="btn2">버튼을 클릭</button>
+
+
+  <p>2. querySelectorAll</p>
+  <div class="div">1</div>
+  <div class="div">2</div>
+  <div class="div">3</div>
+
+  <hr />
+  <!-- 3 ) addEventListener 메서드 사용 -->
+  <button class="btnsChange">change Buttons Color</button>
+  <button class="btnsChange">change Buttons Color</button>
+  <button class="btnsChange">change Buttons Color</button>
+
+  <hr />
+
+  <!-- 4) 이벤트 제거 -->
+
+  <p>이벤트 제거</p>
+  <button class="remove">이벤트 제거</button>
+
+
+  <script src="./event01.js"></script>
+</body>
+</html>
