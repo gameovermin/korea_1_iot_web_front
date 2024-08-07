@@ -26,3 +26,27 @@ let todo = {
 
 // >> 'CRUD' 프로그램의 기본 기능
 // Create(생성, 1), Read(읽기, 4), Update(수정, 2), Delete(삭제, 3)
+
+// # 프로젝트 구현
+
+let todos = [];
+
+function addTodo() {
+
+
+}
+// 할 일을 완료상태를 변경하는 함수
+function toggleTodo() {
+
+
+}
+
+function deleteTodo() {
+
+
+}
+
+function displayTodos() {
+
+
+}
