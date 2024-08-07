@@ -23,13 +23,15 @@ addBtn.addEventListener('click', () => {
     // : 해당 요소의 class속성으로 클래스명을 추가
     newItem.classList.add('todo-item');
 
+    // 클래스명을 지울때
+    // newItem.classList.remove('todo-item');
+
     todoList.appendChild(newItem);
   }
   // ? input 등과 같이 상호작용된 데이터를 사용하고 나면
   // : 해당 데이터를 초기화
 
   todoInput.value = '';
-  // todoInput.style.display = 'none';
 });
 
 todoList.addEventListener('click', (e) => {
