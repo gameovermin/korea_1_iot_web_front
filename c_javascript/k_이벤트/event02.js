@@ -68,7 +68,8 @@ function tileChange() {
 
 for (let i = 0; i < tiles.length; i++) {
   tiles[i].onclick = function (e) {
-    e.target.style.backgroundColor = tileChange();
+    // e.target.style.backgroundColor = tileChange();
+    this.style.backgroundColor = tileChange();
   }
 }
 
