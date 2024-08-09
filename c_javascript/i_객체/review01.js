@@ -72,9 +72,9 @@ function toggleTodo(id) {
 // 할 일을 삭제하는 함수
 // :  주어진 id를 가진 할 일을 todos에
 function deleteTodo(id) {
-  todos = todos.filter(((todo) => {
+  todos = todos.filter((todo) => {
     return todo.id !== id;
-  }))
+  });
   displayTodos();
 }
 
