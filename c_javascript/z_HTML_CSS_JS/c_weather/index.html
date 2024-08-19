@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div id="container">
+      <div id="weather-info">
+        <p id="now">Monday,April 8, 2024</p>
+        <div id="weather">
+          <h3>-3C°</h3>
+          <h4>Seoul</h4>
+          <h3>:대체로_맑음:</h3>
+        </div>
+      </div>
+      <div id="weather-detail">
+        <input type="text" placeholder="search" id="search" />
+          <div class="contents">
+            <p>Weather Details</p>
+            <hr />
+            <div>
+              <span>Max/Min Temp</span>
+              <span>-4C° / -3C° </span>
+            </div>
+            <div>
+              <span>Humidity</span>
+              <span>29%</span>
+            </div>
+            <div>
+              <span>Wind</span>
+              <span>4.69km/h</span>
+            </div>
+            <div>
+              <span>Cloudy</span>
+              <span>1%</span>
+            </div>
+          </div>
+        <button class="dark">다크모드</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
