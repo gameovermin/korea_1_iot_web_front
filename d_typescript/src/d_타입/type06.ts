@@ -85,7 +85,7 @@ type UserType = {
   height: 190;
 }
 
-let user:UserType = {
+let user: UserType = {
   name: '판더벤',
   height: 190
 }
