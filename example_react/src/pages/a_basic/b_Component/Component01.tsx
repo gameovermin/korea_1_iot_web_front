@@ -53,6 +53,7 @@ export function Img() {
   // JS 코드 내에서 HTML 코드 작성 시
   // : 소괄호 내에 작성
   // >> 컴포넌트 함수에서 렌더링 할 HTML 코드는 return 반환문 내에서 () 소괄호 지정 후 작성
+  //
 
   return (
     <div>
