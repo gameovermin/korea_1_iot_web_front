@@ -47,6 +47,8 @@ type MultiPropsType = {
 // b = 2;
 
 
+
+
 // function MultiProps({name, colorProps}: MultiPropsType) {
 function MultiProps({name, colorProps}: {name: string, colorProps: string}) {
   return (
