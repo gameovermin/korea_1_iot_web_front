@@ -1,4 +1,22 @@
 import React from 'react'
+// # 리액트 이미지 사용 방법
+// : import 키워드를 사용하여 이미지 파일을 가져오기
+import sea01 from '../../../assets/sea1.jpg';
+import sea02 from '../../../assets/sea2.jpg';
+import sea03 from '../../../assets/sea3.jpg';
+import sea04 from '../../../assets/sea4.jpg';
+
+// 기본 내보내기 가져오기 (컴포넌트 명칭 수정 - Comp01)
+
+/*
+  ! 상대 경로 지정 방법
+  1) ../ 
+  : 해당 폴더 단위를 벗어남
+
+  2) ./
+  : 해당 폴더와 같은 위치
+
+*/
 
 // rfc, rfce >> 함수형 컴포넌트 생성
 // : 파일명으로 컴포넌트 함수 생성
@@ -24,9 +42,46 @@ import React from 'react'
 
 */
 
-function Component01() {
+// ? 컴포넌트 생성
+// Img 컴포넌트
+// : src, alt 속성을 가진 img 태그를 반환
+export function Img() {
+
+  // HTML 코드 내에서 JS 문법 사용 시
+  // : 중괄호 내에 작성
+
+  // JS 코드 내에서 HTML 코드 작성 시
+  // : 소괄호 내에 작성
+  // >> 컴포넌트 함수에서 렌더링 할 HTML 코드는 return 반환문 내에서 () 소괄호 지정 후 작성
+
   return (
-    <div>안녕하세요 컴포넌틥니다</div>
+    <div>
+      <img src={sea01} alt="바다1" width={300} />
+      <img src={sea02} alt="바다2" width={300} />
+      <img src={sea03} alt="바다3" width={300} />
+      <img src={sea04} alt="바다4" width={300} />
+    </div>
+  )
+}
+
+// Component01 : 해당 파일의 메인 컴포넌트
+function Component01() {
+  // 컴포넌트 사용 시 함수 컴포넌트 명으로 태그 작성
+  // : 대문자로 시작!
+
+  // ? JSX 컴포넌트 사용 시 
+  // 마크업(태그)이 한 개인 경우 () 소괄호 생략 가능
+  // , 여러 개일 경우 반드시 소괄호로 감싸서 사용
+  return (
+    // <div>안녕하세요 컴포넌틥니다</div>
+    <div>
+      <h1>Component01 컴포넌트의 시작</h1>
+      {/* img 태그 - HTML 기본 태그 */}
+      <img src={sea01} alt="바다" width={100} />
+
+      {/* img 컴포넌트 - 사용자 정의 태그 */}
+      <Img />
+    </div>
   )
 }
 
