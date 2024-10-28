@@ -40,5 +40,4 @@ export default function JSX02() {
       </div>
     </>
   )
-  // 
 }

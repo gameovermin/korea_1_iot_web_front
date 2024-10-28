@@ -1,4 +1,5 @@
 import React from 'react'
+import Wrapper from './Props02';
 
 /*
   React 문법 체계: JSX
@@ -12,6 +13,7 @@ import React from 'react'
   */
 
 //? 자식 컴포넌트
+// >> 부모로 부터 전달되는 매개변수를 받음
 type ChildType = {
   name: string
 }
@@ -46,7 +48,7 @@ type MultiPropsType = {
 // a = 1;
 // b = 2;
 
-// 
+
 
 
 // function MultiProps({name, colorProps}: MultiPropsType) {
@@ -70,7 +72,7 @@ export default function Props01() {
 
   return (
     <div>Props01
-      {/* props의 경우 객체로 전달! */}
+      {/* props의 경우 객체로 전달! >> 함수에*/}
       <ChildComponent name='마테이스 더리흐트' age={30}/>
       <ChildComponent name='킹슬레 코망' age={35} />
       <MultiProps name='레오나르도 뭘 보누치' colorProps='pink'/>
